@@ -1,9 +1,11 @@
-﻿namespace UtilityToolKit.DemoApp;
+﻿using UtilityToolKit.Menus;
+
+namespace UtilityToolKit.DemoApp;
 
 public class Program
 {
     public static void Main(string[] args)
     {
-        Console.WriteLine("Hello world!");
+        MainMenu.BaseMenu();
     }
 }
