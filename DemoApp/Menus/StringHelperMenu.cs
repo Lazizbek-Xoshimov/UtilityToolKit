@@ -1,6 +1,6 @@
 using UtilityToolKit.Helpers;
 
-namespace UtilityToolKit.Menus;
+namespace UtilityToolKit.DemoApp.Menus;
 
 public class StringHelperMenu
 {
