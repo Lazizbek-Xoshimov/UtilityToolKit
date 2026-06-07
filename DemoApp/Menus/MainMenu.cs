@@ -7,6 +7,7 @@ public static class MainMenu
         Console.WriteLine("Utility Toolkit");
         Console.WriteLine("1. String Helper");
         Console.WriteLine("2. Math Utilities");
+        Console.WriteLine("3. Pagination");
         Console.WriteLine("0. Exit");
 
         Console.Write("Choice: ");
@@ -20,6 +21,7 @@ public static class MainMenu
         {
             case 1: StringHelperMenu.BaseMenu(); break;
             case 2: MathUtilitiesMenu.BaseMenu(); break;
+            case 3: PaginationExtensionMenu.BaseMenu(); break;
             default: Console.WriteLine("You choose a differenet number."); break;
         }
     }
