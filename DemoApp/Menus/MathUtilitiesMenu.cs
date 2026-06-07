@@ -7,7 +7,11 @@ public class MathUtilitiesMenu
 {
     public static void BaseMenu()
     {
+        Console.Clear();
+        Console.BackgroundColor = ConsoleColor.Green;
+        Console.ForegroundColor = ConsoleColor.Black;
         Console.WriteLine("Math Utilities");
+        Console.ResetColor();
         Console.WriteLine("1. Check for even number");
         Console.WriteLine("2. Check for odd number");
         Console.WriteLine("3. Calculate factorial of number");
@@ -23,6 +27,7 @@ public class MathUtilitiesMenu
     {
         switch (option)
         {
+            case 0: MainMenu.BaseMenu(); break;
             case 1: IsEvenMenu(); break;
             case 2: IsOddMenu(); break;
             case 3: FactorialMenu(); break;

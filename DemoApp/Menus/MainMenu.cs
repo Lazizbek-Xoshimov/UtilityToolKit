@@ -4,7 +4,11 @@ public static class MainMenu
 {
     public static void BaseMenu()
     {
+        Console.Clear();
+        Console.BackgroundColor = ConsoleColor.Green;
+        Console.ForegroundColor = ConsoleColor.Black;
         Console.WriteLine("Utility Toolkit");
+        Console.ResetColor();
         Console.WriteLine("1. String Helper");
         Console.WriteLine("2. Math Utilities");
         Console.WriteLine("3. Pagination");
@@ -19,6 +23,7 @@ public static class MainMenu
     {
         switch (option)
         {
+            case 0: break;
             case 1: StringHelperMenu.BaseMenu(); break;
             case 2: MathUtilitiesMenu.BaseMenu(); break;
             case 3: PaginationExtensionMenu.BaseMenu(); break;

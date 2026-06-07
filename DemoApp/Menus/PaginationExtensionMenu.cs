@@ -9,7 +9,10 @@ public class PaginationExtensionMenu
     public static void BaseMenu()
     {
         Console.Clear();
+        Console.BackgroundColor = ConsoleColor.Green;
+        Console.ForegroundColor = ConsoleColor.Black;
         Console.WriteLine("Pagination");
+        Console.ResetColor();
         Console.WriteLine("1. Get the number on page");
         Console.WriteLine("0. Back");
 
@@ -22,6 +25,7 @@ public class PaginationExtensionMenu
     {
         switch (option)
         {
+            case 0: MainMenu.BaseMenu(); break;
             case 1: PaginateMenu(); break;
             default: Console.WriteLine("You choose a differenet number."); break;
         }
@@ -52,7 +56,7 @@ public class PaginationExtensionMenu
 
             if (button.Key.Equals(ConsoleKey.LeftArrow))
             {
-                // Console.Clear();
+                Console.Clear();
                 foreach(var number in numbers.Paginate(page --, 10))
                 {
                     Console.Write($"{number} ");
@@ -60,7 +64,7 @@ public class PaginationExtensionMenu
             }
             else if (button.Key.Equals(ConsoleKey.RightArrow))
             {
-                // Console.Clear();
+                Console.Clear();
                 foreach(var number in numbers.Paginate(page ++, 10))
                 {
                     Console.Write($"{number} ");

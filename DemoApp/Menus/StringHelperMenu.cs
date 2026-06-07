@@ -6,7 +6,11 @@ public class StringHelperMenu
 {
     public static void BaseMenu()
     {
+        Console.Clear();
+        Console.BackgroundColor = ConsoleColor.Green;
+        Console.ForegroundColor = ConsoleColor.Black;
         Console.WriteLine("String Helper menu");
+        Console.ResetColor();
         Console.WriteLine("1. Checking a string for palindrome");
         Console.WriteLine("2. Reverse text");
         Console.WriteLine("3. Count of words");
@@ -21,6 +25,7 @@ public class StringHelperMenu
     {
         switch (option)
         {
+            case 0: MainMenu.BaseMenu(); break;
             case 1: IsPalindromeMenu(); break;
             case 2: ReverseTextMenu(); break;
             case 3: CountOfWordsMenu(); break;
