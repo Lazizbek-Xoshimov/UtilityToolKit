@@ -1,4 +1,4 @@
-﻿using UtilityToolKit.Menus;
+﻿using UtilityToolKit.DemoApp.Menus;
 
 namespace UtilityToolKit.DemoApp;
 
